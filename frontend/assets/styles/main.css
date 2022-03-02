@@ -1,0 +1,51 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#default {
+    --primary: #DA2519;
+    --background-primary: #E02624;
+    --text-primary: #DA2519;
+    --text_dark_primary: #B11F16;
+    --primary-hover: #AF1E14;
+    --secondary: #383838;
+    --secondary-v2: #525252;
+    --tertiary: #4983B3;
+    --body-bg: #FFFFFF;
+    --background-gray: #C2C2C2;
+    --primary-btn-txt: #F2E8DA;
+    --carousel-nav-bg: #E6E6E6;
+    --carousel-nav-bg-hover: #FFF;
+    --carousel-nav-box-shadow: rgba(230, 113, 25, 0.1);
+    --dynamic-space: 78px;
+    --orange: #FF6F00;
+    --black: #202020;
+    --light-gray: #F7F7F7;
+    --gray_2: #757575;
+    --gray_3: #444444;
+    --white: #FFFFFF;
+    --box_shadow_gray: #00000029;
+    --red: #FF3333;
+    --error_red: #ca3c49;
+    --light_brown: #FAF8F5;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Main */
+.main {
+    margin-top: 5em;
+}
+
+/* Poppins-Regular 14px */
