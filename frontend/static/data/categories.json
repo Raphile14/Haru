@@ -1,0 +1,59 @@
+{
+    "categories": [
+        {
+            "id": 0,
+            "name": "Dosirak",
+            "description": "Sample Description."
+        },
+        {
+            "id": 1,
+            "name": "BBQ Platters",
+            "description": "Each platter comes with 6 side dishes and steamed egg. Good for 2-3 people."
+        },
+        {
+            "id": 2,
+            "name": "BBQ (Pork)",
+            "description": "Choose from our authentic Korean dishes."
+        },
+        {
+            "id": 3,
+            "name": "Soup",
+            "description": "Choose from our authentic Korean dishes."
+        },
+        {
+            "id": 4,
+            "name": "Appetizers",
+            "description": "Choose from our authentic Korean dishes."
+        },
+        {
+            "id": 5,
+            "name": "Mega Menu",
+            "description": "Choose from our authentic Korean dishes."
+        },
+        {
+            "id": 6,
+            "name": "Naeng-Myeon",
+            "description": "Choose from our authentic Korean dishes."
+        },
+        {
+            "id": 7,
+            "name": "All-time favorites",
+            "description": "Choose from our authentic Korean dishes."
+        },
+        {
+            "id": 8,
+            "name": "Beverages",
+            "description": "Choose from our authentic Korean beverages."
+        },
+        {
+            "id": 9,
+            "name": "Fresh Meat",
+            "description": "Choose from our authentic Korean dishes."
+        },
+        {
+            "id": 10,
+            "name": "Show All",
+            "description": "Choose from our authentic Korean dishes."
+        }
+    ]
+}

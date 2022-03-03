@@ -1,0 +1,162 @@
+{
+    "dishes": [
+        {
+            "id": 0,
+            "category_id": 0,
+            "name": "Samgyeopsal Hansang",
+            "description": "Sample description.",
+            "variations": [
+                {
+                    "name": "Small (300g)",
+                    "price": 800
+                },
+                {
+                    "name": "Medium (450g)",
+                    "price": 1200
+                },
+                {
+                    "name": "Large (600g)",
+                    "price": 1600
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "category_id": 0,
+            "name": "Galbisal Hansang",
+            "description": "Sample description.",
+            "variations": [
+                {
+                    "name": "Small (300g)",
+                    "price": 1400
+                },
+                {
+                    "name": "Medium (450g)",
+                    "price": 2140
+                },
+                {
+                    "name": "Large (600g)",
+                    "price": 2840
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "category_id": 0,
+            "name": "All Lunch Box with Meat (Dosirak Samgyeopsal)",
+            "description": "Sample description.",
+            "variations": [
+                {
+                    "name": "150g",
+                    "price": 450
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "category_id": 0,
+            "name": "Rib's Lunch Box (Dosirak Galbisal)",
+            "description": "Sample description.",
+            "variations": [
+                {
+                    "name": "150g",
+                    "price": 750
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "category_id": 1,
+            "name": "Platter A",
+            "description": "Porkbelly Pork Shoulder & Pork Jowls. Good for 2-3 People.",
+            "variations": [
+                {
+                    "name": "Default",
+                    "price": 1300
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "category_id": 1,
+            "name": "Platter B",
+            "description": "Pork Shoulder Beef Wagyu Chuck Tail Flap & Marinated Boneless Beef Belly. Good for 2-3 People.",
+            "variations": [
+                {
+                    "name": "Default",
+                    "price": 2500
+                }
+            ],
+            "add-ons": [
+                {
+                    "name": "Shrimp (200g)",
+                    "price": 300
+                },
+                {
+                    "name": "Cheese",
+                    "price": 200
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "category_id": 1,
+            "name": "Platter C",
+            "description": "USDA Prime Angus Rib-Eye Wagyu Chuck Tail Flap & USDA Angus Rib Fingers. Good for 2-3 People.",
+            "variations": [
+                {
+                    "name": "Default",
+                    "price": 4400
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "category_id": 2,
+            "name": "Hangjeongsal (Pork Jowls)",
+            "description": "Jowl.",
+            "variations": [
+                {
+                    "name": "150g",
+                    "price": 450
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "category_id": 3,
+            "name": "Jumbo-Galbitang",
+            "description": "Jumbo Short Rib Soup. Good for 1-2 People, served with rice.",
+            "variations": [
+                {
+                    "name": "Default",
+                    "price": 750
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "category_id": 4,
+            "name": "Yuk-He",
+            "description": "Beef Tartare",
+            "variations": [
+                {
+                    "name": "200g",
+                    "price": 850
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "category_id": 4,
+            "name": "Japchae",
+            "description": "Stir-fried Glass Noodles and Vegetables",
+            "variations": [
+                {
+                    "name": "Default",
+                    "price": 350
+                }
+            ]
+        }
+    ]
+}

@@ -31,23 +31,23 @@
         <div>
             <h2><strong>We Accept</strong></h2>
             <div>Cash on Delivery</div>
-            <div class="payments">
-                <div>
+            <div>
+                <div class="payments">
                     <img
                         src="/images/payments/mastercard.png"
                         alt="mastercard"
                     />
                 </div>
-                <div>
+                <div class="payments">
                     <img src="/images/payments/visa.png" alt="visa" />
                 </div>
-                <div>
+                <div class="payments">
                     <img src="/images/payments/jcb.png" alt="jcb" />
                 </div>
-                <div>
+                <div class="payments">
                     <img src="/images/payments/gcash.svg" alt="gcash" />
                 </div>
-                <div>
+                <div class="payments">
                     <img src="/images/payments/unionpay.png" alt="unionpay" />
                 </div>
             </div>
@@ -63,11 +63,16 @@ export default {
 </script>
 
 <style>
+.payments, .footer__socials > div {
+    display: inline-block;
+}
+
 #footer {
     overflow: hidden;
     white-space: nowrap;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 6em;
+    padding-right: 6em;
+    margin-bottom: 5em;
 }
 
 #footer,

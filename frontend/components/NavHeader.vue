@@ -11,18 +11,23 @@
                         />
                     </NuxtLink>
                 </div>
-    
+
                 <!-- Left Links -->
                 <div>
                     <NuxtLink to="/branches/makati/menu"> Menu </NuxtLink>
                     <NuxtLink to="/track-my-order"> Track My Order </NuxtLink>
                 </div>
             </div>
-    
+
             <!-- Right Links -->
             <div class="right__align">
                 <select name="" id="">
-                    <option value="Makati">Makati</option>
+                    <option
+                        v-for="index in branches"
+                        :key="`branch_${index.id}`"
+                    >
+                        {{ index.name }}
+                    </option>
                 </select>
                 <input type="text" name="" id="" placeholder="Search" />
                 <NuxtLink to="/login">
@@ -37,6 +42,12 @@
 <script>
 export default {
     name: "NavBar",
+    props: {
+        branches: {
+            type: Object / Array,
+            default: null,
+        },
+    },
 };
 </script>
 
@@ -54,11 +65,12 @@ export default {
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 999;    
+    z-index: 999;
 }
 
 .wrapper {
     padding: 15px 0;
+    vertical-align: middle;
 }
 
 #navbar > div > div,

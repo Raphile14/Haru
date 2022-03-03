@@ -1,0 +1,16 @@
+{
+    "best-sellers": [
+        {
+            "id": 0,
+            "category_id": 6,
+            "description": "description",
+            "price": 800
+        },
+        {
+            "id": 1,
+            "category_id": 6,
+            "description": "description",
+            "price": 800
+        }
+    ]
+}

@@ -39,7 +39,8 @@ export default {
     // Google Fonts
     googleFonts: {
         families: {
-            Poppins: true
+            Poppins: true,
+            Karla: true
         }
     },
 

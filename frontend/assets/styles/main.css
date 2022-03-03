@@ -43,9 +43,35 @@ img {
     vertical-align: middle;
 }
 
+/* Misc */
+.primary__button {
+    border: 1px solid var(--primary);
+    color: var(--primary-btn-txt);
+    background-color: var(--primary);
+    display: inline-block;
+    padding: 11px 32px 10px;
+    border-radius: 38px;
+    line-height: 26px;
+    font-size: 16px;
+    text-transform: none;
+    font-family: 'Karla-Regular', sans-serif;
+    text-align: center;
+}
+
 /* Main */
 .main {
-    margin-top: 5em;
+    /* margin-top: 5em; */
+}
+
+.title {
+    font-family: "Karla-Bold", sans-serif;
+    line-height: 51px;
+    font-size: 51px;
 }
 
 /* Poppins-Regular 14px */
+
+/* Text Colors */
+.secondary__text {
+    color: var(--secondary);
+}

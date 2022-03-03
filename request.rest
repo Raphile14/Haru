@@ -1,0 +1,9 @@
+
+### Get Branches
+GET https://dbresto-api.designbluemanila.com/api/frontend/branches
+
+### Get Menu
+GET https://dbresto-api.designbluemanila.com/api/frontend/branch/makati/menu
+
+### Get Makati
+GET https://dbresto-api.designbluemanila.com/api/frontend/homepage/makati
