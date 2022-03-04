@@ -1,5 +1,5 @@
 <template>
-    <div class="main index">
+    <div class="index">
         <div v-if="$fetchState.pending">content loading</div>
         <div v-else>
             <div
@@ -13,7 +13,11 @@
                         </h2>
                         <p>{{ homepage.banner.description_text }}</p>
                     </div>
-                    <button class="primary__button">Order Now</button>
+                    <NuxtLink to="/branches/makati/menu"
+                        ><button class="primary__button">
+                            Order Now
+                        </button></NuxtLink
+                    >
                 </div>
                 <!-- <img
                     :src="homepage.banner.image[0].path"

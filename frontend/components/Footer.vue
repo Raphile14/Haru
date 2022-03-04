@@ -25,6 +25,7 @@
                 <NuxtLink to="/terms-and-conditions">
                     Terms &amp; Conditions
                 </NuxtLink>
+                <br />
                 <NuxtLink to="/privacy-policy"> Privacy Policy </NuxtLink>
             </div>
         </div>
@@ -63,9 +64,6 @@ export default {
 </script>
 
 <style>
-.payments, .footer__socials > div {
-    display: inline-block;
-}
 
 #footer {
     overflow: hidden;
@@ -81,7 +79,9 @@ export default {
 }
 
 #footer > div,
-.footer__socials {
+.footer__socials,
+.payments,
+.footer__socials > div {
     display: inline-block;
     vertical-align: text-top;
 }
