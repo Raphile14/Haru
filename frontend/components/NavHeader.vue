@@ -2,8 +2,8 @@
     <div id="navbar" data-v-58dab166="" data-v-0f60d5c4="">
         <div class="wrapper" data-v-58dab166="">
             <div class="left" data-v-58dab166="">
-                <a
-                    href="/"
+                <NuxtLink
+                    to="/"
                     rel="canonical"
                     class="logo nuxt-link-exact-active nuxt-link-active"
                     data-v-58dab166=""
@@ -13,24 +13,24 @@
                         src="https://dbresto-api.designbluemanila.com/storage/uploads/2021-11-22/08-23-04-915237/haru-logo@2x.png"
                         alt="Haru"
                         class="logo"
-                /></a>
+                /></NuxtLink>
                 <ul class="list desktop_list" data-v-58dab166="">
                     <li data-v-58dab166="">
-                        <a
-                            href="/branches/makati/menu"
+                        <NuxtLink
+                            to="/branches/makati/menu"
                             rel="canonical"
                             class="item"
                             data-v-58dab166=""
-                            >Menu</a
+                            >Menu</NuxtLink
                         >
                     </li>
                     <li data-v-58dab166="">
-                        <a
-                            href="/track-my-order"
+                        <NuxtLink
+                            to="/track-my-order"
                             rel="canonical"
                             class="item"
                             data-v-58dab166=""
-                            >Track My Order</a
+                            >Track My Order</NuxtLink
                         >
                     </li>
                 </ul>
@@ -72,12 +72,15 @@
                             </button>
                         </form>
                     </div>
-                    <a href="/login" class="login pointer" data-v-58dab166=""
-                        >Login</a
+                    <NuxtLink
+                        to="/login"
+                        class="login pointer"
+                        data-v-58dab166=""
+                        >Login</NuxtLink
                     >
                     <!---->
                     <!---->
-                    <a href="#" class="cart" data-v-58dab166=""
+                    <NuxtLink to="#" class="cart" data-v-58dab166=""
                         ><div class="icon" data-v-58dab166="">
                             <img
                                 src="/icons/cart.png"
@@ -87,11 +90,11 @@
                             <div class="number" data-v-58dab166="">
                                 <span data-v-58dab166="">0</span>
                             </div>
-                        </div></a
+                        </div></NuxtLink
                     >
                 </div>
                 <div class="mobile" data-v-58dab166="">
-                    <a to="#" class="cart" data-v-58dab166=""
+                    <NuxtLink to="#" class="cart" data-v-58dab166=""
                         ><div class="icon" data-v-58dab166="">
                             <img
                                 src="/icons/cart.png"
@@ -101,7 +104,7 @@
                             <div class="number" data-v-58dab166="">
                                 <span data-v-58dab166="">0</span>
                             </div>
-                        </div></a
+                        </div></NuxtLink
                     >
                     <div class="burger" data-v-58dab166="">
                         <div class="bar top" data-v-58dab166=""></div>

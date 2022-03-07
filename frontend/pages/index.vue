@@ -14,7 +14,7 @@
                         <p>{{ homepage.banner.description_text }}</p>
                     </div>
                     <NuxtLink to="/branches/makati/menu"
-                        ><button class="primary__button">
+                        ><button class="primary__button shrink">
                             Order Now
                         </button></NuxtLink
                     >
@@ -43,18 +43,35 @@
                 </div>
             </div>
 
-            <div class="best__seller">
+            <div class="best__seller__products">
                 <div>
                     <h2>Best Sellers</h2>
                     <p>Try our most popular dishes</p>
                 </div>
-
-                <div>
-                    <Dish
-                        v-for="index in homepage.best_sellers"
-                        :key="`best_seller_${index.id}`"
-                        :dish="index"
-                    />
+                <div class="best__seller__container">
+                    <div class="best__seller__dish__container swiper-container">
+                        <div class="swiper-wrapper">
+                            <Dish
+                                class="best_dish"
+                                v-for="index in homepage.best_sellers"
+                                :key="`best_seller_${index.id}`"
+                                :dish="index"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        data-v-064b630d=""
+                        slot="button-next"
+                        class="
+                            swiper-button-next
+                            swiper-button-nextcategory_products
+                            __css_lebIk2bH __css_LXf4ywGe
+                        "
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-disabled="false"
+                    ></div>
                 </div>
             </div>
 
@@ -64,13 +81,31 @@
                     <p>{{ homepage.featured_category_products.description }}</p>
                 </div>
 
-                <div>
-                    <Dish
-                        v-for="index in homepage.featured_category_products
-                            .product"
-                        :key="`featured_category_products${index.id}`"
-                        :dish="index"
-                    />
+                <div class="featured__container">
+                    <div class="featured__dish__container swiper-container">
+                        <div class="swiper-wrapper">
+                            <Dish
+                                class="featured__dish"
+                                v-for="index in homepage
+                                    .featured_category_products.product"
+                                :key="`featured_category_products${index.id}`"
+                                :dish="index"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        data-v-064b630d=""
+                        slot="button-next"
+                        class="
+                            swiper-button-next
+                            swiper-button-nextcategory_products
+                            __css_lebIk2bH __css_LXf4ywGe
+                        "
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-disabled="false"
+                    ></div>
                 </div>
             </div>
 
@@ -129,13 +164,17 @@ export default {
 <style>
 .overlay {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
     left: 0;
     right: 0;
     width: 100%;
     max-width: calc(100% - 120px);
     margin: 0 auto;
-    transform: translateY(-50%);
+    transform: translateY(200%);
+}
+
+.shrink {
+    max-width: 200px;
 }
 
 .front {
@@ -158,5 +197,42 @@ div.index > div > div {
     vertical-align: middle;
     border: 1px solid black;
     display: inline-block;
+}
+
+.featured__container,
+.best__seller__container {
+    padding: 0 calc(7% - 10px) 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured__dish,
+.best_dish {
+    position: relative;
+}
+
+.featured__dish__container,
+.best__seller__dish__container {
+    overflow: visible !important;
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
 }
 </style>
