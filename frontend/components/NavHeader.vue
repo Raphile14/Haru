@@ -117,52 +117,6 @@
         <!---->
         <!---->
     </div>
-    <!-- <nav id="navbar">
-        <div class="wrapper">
-            <div class="left__align">
-                <div>
-                    <NuxtLink to="/">
-                        <img
-                            class="navbar__logo"
-                            src="/images/haru-logo@2x.png"
-                            alt="haru-logo"
-                        />
-                    </NuxtLink>
-                </div>
-
-                <div>
-                    <NuxtLink to="/branches/makati/menu"> Menu </NuxtLink>
-                    <NuxtLink to="/track-my-order"> Track My Order </NuxtLink>
-                </div>
-            </div>
-
-            <div class="right__align">
-                <img
-                    class="navbar__cart right__align"
-                    src="/images/cart.png"
-                    alt="cart"
-                />
-                <NuxtLink to="/login" class="right__align">
-                    <button class="login">Login</button>
-                </NuxtLink>
-                <input
-                    class="right__align"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="Search"
-                />
-                <select name="" id="" class="right__align">
-                    <option
-                        v-for="index in branches"
-                        :key="`branch_${index.id}`"
-                    >
-                        {{ index.name }}
-                    </option>
-                </select>
-            </div>
-        </div>
-    </nav> -->
 </template>
 
 <script>
@@ -208,9 +162,11 @@ export default {
     display: block;
     flex: 0 0 300px;
     max-width: 130px;
+    height: auto;
     padding: 0;
     display: flex;
     justify-content: center;
+    object-fit: cover;
 }
 
 #navbar .wrapper .left .list {
