@@ -75,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer__col__2">
+        <div class="footer__col__2" v-on:click="scrollToTop()">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14.82"
@@ -103,6 +103,11 @@
 <script>
 export default {
     name: "Footer",
+    methods: {
+        async scrollToTop() {
+            window.scrollTo(0, 0);
+        },
+    },
 };
 </script>
 
@@ -142,6 +147,7 @@ export default {
 .footer__col__2 {
     position: absolute;
     right: calc(10% - 30px);
+    cursor: pointer;
 }
 
 .payments {

@@ -115,6 +115,11 @@ ul {
   padding-inline-start: 40px;
 }
 
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
 input,
 input:after,
 input:before,
