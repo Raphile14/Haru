@@ -1,13 +1,28 @@
 <template>
     <div class="main privacy__policy">
-        <div class="url">
-            <NuxtLink to="/"> HOME </NuxtLink> /
-            <NuxtLink to="/privacy-policy"> PRIVACY POLICY </NuxtLink>
+        <div class="main_container">
+            <div id="breadcrumb">
+                <ul>
+                    <li>
+                        <NuxtLink to="/" class="breadcrumb__link">
+                            HOME
+                        </NuxtLink>
+                        <span class="slash"> / </span>
+                    </li>
+                    <li>
+                        <NuxtLink to="/privacy-policy" class="breadcrumb__link">
+                            <span class="breadcrumb__link__active"
+                                >PRIVACY POLICY</span
+                            >
+                        </NuxtLink>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h2>Privacy Policy</h2>
+        <div class="privacy__policy__container">
+            <h1 class="privacy__policy__title">Privacy Policy</h1>
             <div class="description">
-                <p>
+                <p class="privacy__policy__description">
                     At Jang Ga Rae (hereinafter, “Webflow,” “Company,” “us,” or
                     “we”), we respect and protect the privacy of visitors to our
                     website, www.webflow.com, and the other websites under the
@@ -17,7 +32,7 @@
                     “Service”).
                 </p>
 
-                <p>
+                <p class="privacy__policy__description">
                     This Global Privacy Policy (“Policy”) explains how we
                     collect, use, disclose, and protect visitors’ and users’
                     information as part of the Service. Any discussion of your
@@ -30,12 +45,12 @@
                     about our data collection practices and your rights.
                 </p>
 
-                <p>
+                <p class="privacy__policy__description">
                     Capitalized terms that are not defined in this Policy have
                     the meaning given them in our Terms of Service.
                 </p>
 
-                <p>
+                <p class="privacy__policy__description">
                     By accessing and using our Service, you signify your
                     acceptance to the terms of this Privacy Policy. If you do
                     not agree with or you are not comfortable with any aspect of
@@ -45,7 +60,7 @@
 
                 <h2>1. What “Personal Information” means</h2>
 
-                <p>
+                <p class="privacy__policy__description">
                     Welcome to our website www.janggarae.com ("Site"). These
                     Terms of Use govern your access and use of the Site. The
                     Access and the use of the Site, as well as the purchase of
@@ -65,7 +80,7 @@
 
                 <h3>a. Information you provide to us</h3>
 
-                <p>
+                <p class="privacy__policy__description">
                     Welcome to our website www.janggarae.com ("Site"). These
                     Terms of Use govern your access and use of the Site. The
                     Access and the use of the Site, as well as the purchase of
@@ -83,7 +98,7 @@
                     parties
                 </h3>
 
-                <p>
+                <p class="privacy__policy__description">
                     Welcome to our website www.janggarae.com ("Site"). These
                     Terms of Use govern your access and use of the Site. The
                     Access and the use of the Site, as well as the purchase of
@@ -98,7 +113,7 @@
 
                 <h3>c. Application integration</h3>
 
-                <p>
+                <p class="privacy__policy__description">
                     Welcome to our website www.janggarae.com ("Site"). These
                     Terms of Use govern your access and use of the Site. The
                     Access and the use of the Site, as well as the purchase of
@@ -113,7 +128,7 @@
 
                 <h3>d. Information you provide to us</h3>
 
-                <p>
+                <p class="privacy__policy__description">
                     Welcome to our website www.janggarae.com ("Site"). These
                     Terms of Use govern your access and use of the Site. The
                     Access and the use of the Site, as well as the purchase of
@@ -131,7 +146,7 @@
                     parties
                 </h3>
 
-                <p>
+                <p class="privacy__policy__description">
                     Welcome to our website www.janggarae.com ("Site"). These
                     Terms of Use govern your access and use of the Site. The
                     Access and the use of the Site, as well as the purchase of
@@ -146,7 +161,7 @@
 
                 <h3>f. Application integration</h3>
 
-                <p>
+                <p class="privacy__policy__description">
                     Welcome to our website www.janggarae.com ("Site"). These
                     Terms of Use govern your access and use of the Site. The
                     Access and the use of the Site, as well as the purchase of
@@ -161,7 +176,7 @@
 
                 <h2>LINK AND OTHER WEBSITE</h2>
 
-                <p>
+                <p class="privacy__policy__description">
                     The Site contains hypertext links (the "links") to other
                     websites which have no connection with www.janggarae.com.
                     The Manager does not control or monitor such web sites or
@@ -185,7 +200,7 @@
 
                 <h2>LINK TO JANG GA RAE</h2>
 
-                <p>
+                <p class="privacy__policy__description">
                     Anyone interested in linking the Home page and other pages
                     of the website, which are publicly accessible, please
                     contact the Manager at the following email address:
@@ -209,7 +224,7 @@
 
                 <h2>WARNINGS</h2>
 
-                <p>
+                <p class="privacy__policy__description">
                     The Manager has made all efforts to prevent the publication
                     on its web site of content describing or representing scenes
                     of physical or psychological violence or which, according to
@@ -225,7 +240,7 @@
                     responsibility.
                 </p>
 
-                <p>
+                <p class="privacy__policy__description">
                     The Manager has also taken every precaution to ensure its
                     Users that the contents of the Site are accurate and do not
                     contain any incorrect or out of date, to the date of their
@@ -279,9 +294,31 @@ export default {
 .privacy__policy > div > div > h2 {
     font-weight: bold;
 }
-.privacy__policy {
+
+.privacy__policy__description {
+    font-size: 16px;
+    text-transform: none;
+    font-family: Poppins-Light;
+    color: #525252;
+    margin-bottom: 1.5em;
+}
+
+.privacy__policy__container {
+    padding: 50px 0;
+    width: 100%;
+    max-width: 65%;
+    margin: 0 auto;
+}
+.privacy__policy__title {
+    font-size: 40px;
+}
+.privacy__policy__content {
+    padding: 20px 0 70px;
+    padding-bottom: 20px;
+}
+/* .privacy__policy {
     padding-top: 5em;
     padding-left: 10em;
     padding-right: 10em;
-}
+} */
 </style>

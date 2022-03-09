@@ -253,35 +253,4 @@ export default {
     margin: 0 auto;
     padding: 102px 0 109px;
 }
-.main_container {
-    width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-    margin-top: 4em;
-    /* background-color: var(--light-gray); */
-}
-#breadcrumb {
-    padding: 50px 0 10px;
-    /* background-color: var(--white); */
-}
-#breadcrumb > ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    flex-flow: row wrap;
-}
-#breadcrumb > ul > li {
-    padding: 0 3px;
-}
-.breadcrumb__link {
-    font-size: 14px;
-    text-transform: none;
-    font-family: Poppins-Light;
-    /* color: #383838; */
-    text-transform: uppercase;
-}
-
-.breadcrumb__link__active {
-    color: var(--tertiary);
-}
 </style>
