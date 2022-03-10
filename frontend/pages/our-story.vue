@@ -3,6 +3,11 @@
         <!-- Banner -->
         <section class="story__banner">
             <img src="/images/pages/our_story.jpg" />
+            <div class="story__overlay">
+                <div class="container">
+                    <div class="story__title">Our Story</div>
+                </div>
+            </div>
         </section>
         <div class="main_container story__main__container">
             <div id="breadcrumb">
@@ -80,9 +85,29 @@ export default {
 </script>
 
 <style>
-/* .main > div {
+.story__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
     align-items: center;
-} */
+    justify-content: center;
+}
+.story__title {
+    font-size: 38px;
+    text-transform: none;
+    font-family: CrimsonText-SemiBold;
+    color: #fff;
+    text-align: center;
+}
+.story__container {
+    padding: 0 60px;
+}
 .story__banner {
     position: relative;
     margin-top: 5em;
