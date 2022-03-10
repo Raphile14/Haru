@@ -224,3 +224,49 @@ p {
 .breadcrumb__link__active {
   color: var(--tertiary);
 }
+
+/* form group */
+.form_group {
+  position: relative;
+  margin-bottom: 15px;
+}
+.input_text {
+  font-size: 16px;
+  text-transform: none;
+  font-family: Poppins-Light;
+  line-height: 23px;
+  color: #383838;
+  border: 1px solid hsla(0, 0%, 43.9%, 0.5);
+  padding: 9px 13px 8px;
+  border-radius: 3px;
+  transition: all 0.3s ease-out;
+}
+.validation_container {
+  min-height: 25px;
+}
+.remember_forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.error {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-top: 10px;
+  margin-bottom: -15px;
+  min-height: 40px;
+}
+.others {
+  margin-top: 22px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-bottom: 0;
+}
+.platforms__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
