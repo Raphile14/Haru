@@ -28,7 +28,7 @@
                         </li>
                         <li>
                             <NuxtLink
-                                to="//branches/makati/menu"
+                                to="/branches/makati/menu"
                                 class="breadcrumb__link"
                             >
                                 <span class="breadcrumb__link__active"

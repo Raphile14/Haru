@@ -7,3 +7,6 @@ GET https://dbresto-api.designbluemanila.com/api/frontend/branch/makati/menu
 
 ### Get Makati
 GET https://dbresto-api.designbluemanila.com/api/frontend/homepage/makati
+
+### Get dish
+GET https://dbresto-api.designbluemanila.com/api/frontend/branch/makati/samgyeopsal-hansang
