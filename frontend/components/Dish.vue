@@ -1,6 +1,6 @@
 <template>
     <div class="dish swiper-slide disc__exact">
-        <NuxtLink :to="`/branches/makati/menu${dish.slug}`">
+        <NuxtLink :to="`/branches/makati/menu/${dish.slug}`">
             <div class="dish__inner">
                 <div class="dish__image__holder">
                     <img
