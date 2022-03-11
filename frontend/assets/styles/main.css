@@ -1,3 +1,39 @@
+/* Font */
+@font-face {
+  font-family: "CrimsonText-SemiBold";
+  src: local(CrimsonText-SemiBold),
+    url("~assets/font/CrimsonText-SemiBold.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Karla-Bold";
+  src: local(Karla-Bold),
+    url("~assets/font/Karla-Bold.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Karla-Regular";
+  src: local(Karla-Regular),
+    url("~assets/font/Karla-Regular.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local(Poppins-Bold),
+    url("~assets/font/Poppins-Bold.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: local(Poppins-Light),
+    url("~assets/font/Poppins-Light.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: local(Poppins-Medium),
+    url("~assets/font/Poppins-Medium.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local(Poppins-Regular),
+    url("~assets/font/Poppins-Regular.woff2") format("truetype");
+}
 body {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
