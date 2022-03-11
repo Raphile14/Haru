@@ -12,7 +12,7 @@
                 <div class="dish__description">
                     <div class="dish__text">
                         <h2 class="dish__title">{{ dish.name }}</h2>
-                        <p class="dish__subtitle">{{ dish.description }}</p>
+                        <p class="dish__subtitle" v-html="dish.description"></p>
                         <h3 class="dish__price">Php {{ dish.price }}</h3>
                     </div>
                 </div>

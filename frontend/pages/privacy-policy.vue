@@ -291,8 +291,19 @@ export default {
 </script>
 
 <style>
+.privacy__policy > div > div > h1 {
+    font-size: 40px;
+}
 .privacy__policy > div > div > h2 {
+    font-size: 22px;
     font-weight: bold;
+}
+
+.privacy__policy > div > div > h3 {
+    text-transform: none;
+    font-family: Poppins-Bold;
+    line-height: 2em;
+    font-size: 18px;
 }
 
 .privacy__policy__description {
