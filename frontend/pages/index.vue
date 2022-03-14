@@ -12,21 +12,13 @@
                             {{ homepage.banner.label }}
                         </h2>
                         <p>{{ homepage.banner.description_text }}</p>
+                        <NuxtLink to="/branches/makati/menu"
+                            ><button class="primary__button shrink">
+                                Order Now
+                            </button></NuxtLink
+                        >
                     </div>
-                    <NuxtLink to="/branches/makati/menu"
-                        ><button class="primary__button shrink">
-                            Order Now
-                        </button></NuxtLink
-                    >
                 </div>
-                <!-- <img
-                    :src="homepage.banner.image[0].path"
-                    :alt="homepage.banner.image[0].alt"
-                /> -->
-                <!-- <img
-                    :src="homepage.banner.image[1].path"
-                    :alt="homepage.banner.image[1].alt"
-                /> -->
             </div>
 
             <div class="category">
@@ -295,7 +287,12 @@ export default {
     width: 100%;
     max-width: calc(100% - 120px);
     margin: 0 auto;
-    transform: translateY(200%);
+    transform: translateY(100%);
+}
+
+.front__text {
+    max-width: 50%;
+    padding: 0 30px;
 }
 
 .shrink {
