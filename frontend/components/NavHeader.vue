@@ -51,7 +51,10 @@
                             data-v-58dab166=""
                             v-on:submit.prevent="submit($event)"
                         >
-                            <div class="form_group input" data-v-58dab166="">
+                            <div
+                                class="form_group_nav input"
+                                data-v-58dab166=""
+                            >
                                 <input
                                     type="text"
                                     name="searchKeyword"
@@ -147,6 +150,9 @@ export default {
 </script>
 
 <style>
+.mobile {
+    display: none;
+}
 #navbar {
     background-color: var(--white);
     box-shadow: 0 3px 3px rgb(86 44 10 / 19%);
@@ -172,16 +178,15 @@ export default {
     position: relative;
     z-index: 3;
 }
-
 #navbar .wrapper .left .logo {
     display: block;
     flex: 0 0 300px;
     max-width: 130px;
-    height: auto;
     padding: 0;
     display: flex;
     justify-content: center;
     object-fit: cover;
+    background-size: contain;
 }
 
 #navbar .wrapper .left .list {
@@ -247,7 +252,7 @@ export default {
 #navbar .wrapper #default_form .form_search {
     display: flex;
     align-items: center;
-    height: 100%;
+    /* height: 50%; */
     border-radius: 5px;
     border: 1px solid #dedede;
     padding: 8px;
