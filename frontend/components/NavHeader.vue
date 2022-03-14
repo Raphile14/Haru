@@ -46,13 +46,18 @@
                         <!---->
                     </div>
                     <div id="default_form" data-v-58dab166="">
-                        <form class="form_search" data-v-58dab166="">
+                        <form
+                            class="form_search"
+                            data-v-58dab166=""
+                            v-on:submit.prevent="submit($event)"
+                        >
                             <div class="form_group input" data-v-58dab166="">
                                 <input
                                     type="text"
                                     name="searchKeyword"
                                     autocomplete="off"
                                     placeholder="Search"
+                                    v-model="keyword"
                                     value=""
                                     class="default_input global_search"
                                     data-v-58dab166=""
@@ -126,6 +131,16 @@ export default {
         branches: {
             type: Object / Array,
             default: null,
+        },
+    },
+    data() {
+        return {
+            keyword: "",
+        };
+    },
+    methods: {
+        async submit(e) {
+            this.$router.push(`/search/${this.keyword}`);
         },
     },
 };
